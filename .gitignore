@@ -1,0 +1,19 @@
+# Arquivos de dados do TCC (não versionar)
+input/*.md
+docs/tcc_sanitizado.md
+docs/manifest_integridade.json
+docs/capitulos/*.md
+
+# Relatórios gerados
+reports/*.md
+
+# Preserva as pastas mantendo os arquivos .gitkeep
+!input/.gitkeep
+!docs/capitulos/.gitkeep
+!reports/.gitkeep
+
+# Temporários e sistema
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
