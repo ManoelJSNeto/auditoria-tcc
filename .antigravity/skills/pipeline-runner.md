@@ -15,3 +15,8 @@ Apresente imediatamente ao usuário as opções abaixo e aguarde a escolha:
 ## Regras de Execução em Lote (Opção 1):
 - A execução dos capítulos DEVE ser estritamente sequencial (01 -> 02 -> 03...) para garantir que o glossário acumulado receba os termos na ordem cronológica correta.
 - Ao final, exiba um sumário executivo com os bloqueadores de cada capítulo.
+
+### Pós-Execução Obrigatória:
+- Após gerar todos os relatórios em `reports/`, execute deterministicamente no terminal:
+  `python scripts/consolidar.py`
+- Avise o usuário que o arquivo `CHECKLIST_MESTRE.md` foi gerado na raiz e apresente o resumo quantitativo de itens a corrigir.
